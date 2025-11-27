@@ -1,0 +1,298 @@
+prompt using instruction_no0
+Compute performance metrics based on all questions Professional_Licensing_Examination_qwen-plus_instruction_no0_.pkl
+Professional_Licensing_Examination_qwen-plus_instruction_no0_.pkl
+number of parsing errors: 0
+number of unknown: 0
+number of correct answers: 2043
+number of error answers: 357
+parsing errors are considered as errors.
+correct_rate:0.8512
+(lower_correct_rate_95:0.8367~higher_correct_rate_95:0.8646)
+(lower_correct_rate_99:0.8317~higher_correct_rate_99:0.8700)
+Compute performance metrics of every exam Professional_Licensing_Examination_qwen-plus_instruction_no0_.pkl
+correct rate of each exam: ['0.9100', '0.7233', '0.8600', '0.9117']
+num of errors of each exam: [0, 0, 0, 0]
+Compute performance metrics based on all questions Assistant_Professional_Licensing_Examination_qwen-plus_instruction_no0_.pkl
+Assistant_Professional_Licensing_Examination_qwen-plus_instruction_no0_.pkl
+number of parsing errors: 1
+number of unknown: 0
+number of correct answers: 1311
+number of error answers: 186
+parsing errors are considered as errors.
+correct_rate:0.8752
+(lower_correct_rate_95:0.8591~higher_correct_rate_95:0.8919)
+(lower_correct_rate_99:0.8538~higher_correct_rate_99:0.8999)
+Compute performance metrics of every exam Assistant_Professional_Licensing_Examination_qwen-plus_instruction_no0_.pkl
+correct rate of each exam: ['0.8900', '0.8600', '0.8700', '0.8926', '0.8662']
+num of errors of each exam: [0, 0, 0, 0, 1]
+Compute performance metrics based on all questions Professional_Licensing_Examination_qwen3-max_instruction_no0_.pkl
+Professional_Licensing_Examination_qwen3-max_instruction_no0_.pkl
+number of parsing errors: 1
+number of unknown: 0
+number of correct answers: 2077
+number of error answers: 322
+parsing errors are considered as errors.
+correct_rate:0.8654
+(lower_correct_rate_95:0.8521~higher_correct_rate_95:0.8783)
+(lower_correct_rate_99:0.8467~higher_correct_rate_99:0.8838)
+Compute performance metrics of every exam Professional_Licensing_Examination_qwen3-max_instruction_no0_.pkl
+correct rate of each exam: ['0.9217', '0.7129', '0.8967', '0.9317']
+num of errors of each exam: [0, 1, 0, 0]
+Compute performance metrics based on all questions Assistant_Professional_Licensing_Examination_qwen3-max_instruction_no0_.pkl
+Assistant_Professional_Licensing_Examination_qwen3-max_instruction_no0_.pkl
+number of parsing errors: 1
+number of unknown: 0
+number of correct answers: 1321
+number of error answers: 176
+parsing errors are considered as errors.
+correct_rate:0.8818
+(lower_correct_rate_95:0.8652~higher_correct_rate_95:0.8965)
+(lower_correct_rate_99:0.8571~higher_correct_rate_99:0.9019)
+Compute performance metrics of every exam Assistant_Professional_Licensing_Examination_qwen3-max_instruction_no0_.pkl
+correct rate of each exam: ['0.8967', '0.8733', '0.8833', '0.8859', '0.8729']
+num of errors of each exam: [0, 0, 0, 0, 1]
+Compute performance metrics based on all questions Professional_Licensing_Examination_deepseek-v3.1_instruction_no0_.pkl
+Professional_Licensing_Examination_deepseek-v3.1_instruction_no0_.pkl
+number of parsing errors: 34
+number of unknown: 0
+number of correct answers: 1745
+number of error answers: 621
+parsing errors are considered as errors.
+correct_rate:0.7271
+(lower_correct_rate_95:0.7092~higher_correct_rate_95:0.7450)
+(lower_correct_rate_99:0.7029~higher_correct_rate_99:0.7521)
+Compute performance metrics of every exam Professional_Licensing_Examination_deepseek-v3.1_instruction_no0_.pkl
+correct rate of each exam: ['0.7597', '0.6142', '0.7661', '0.8098']
+num of errors of each exam: [9, 9, 10, 6]
+Compute performance metrics based on all questions Assistant_Professional_Licensing_Examination_deepseek-v3.1_instruction_no0_.pkl
+Assistant_Professional_Licensing_Examination_deepseek-v3.1_instruction_no0_.pkl
+number of parsing errors: 18
+number of unknown: 0
+number of correct answers: 1127
+number of error answers: 353
+parsing errors are considered as errors.
+correct_rate:0.7523
+(lower_correct_rate_95:0.7316~higher_correct_rate_95:0.7757)
+(lower_correct_rate_99:0.7190~higher_correct_rate_99:0.7804)
+Compute performance metrics of every exam Assistant_Professional_Licensing_Examination_deepseek-v3.1_instruction_no0_.pkl
+correct rate of each exam: ['0.8087', '0.7416', '0.7703', '0.7543', '0.7322']
+num of errors of each exam: [2, 2, 4, 5, 5]
+Compute performance metrics based on all questions Professional_Licensing_Examination_qwen3_32b_instruction_no0_.pkl
+Professional_Licensing_Examination_qwen3_32b_instruction_no0_.pkl
+number of parsing errors: 24
+number of unknown: 0
+number of correct answers: 1778
+number of error answers: 598
+parsing errors are considered as errors.
+correct_rate:0.7408
+(lower_correct_rate_95:0.7242~higher_correct_rate_95:0.7562)
+(lower_correct_rate_99:0.7146~higher_correct_rate_99:0.7633)
+Compute performance metrics of every exam Professional_Licensing_Examination_qwen3_32b_instruction_no0_.pkl
+correct rate of each exam: ['0.8030', '0.5990', '0.7798', '0.8105']
+num of errors of each exam: [1, 9, 5, 9]
+Compute performance metrics based on all questions Assistant_Professional_Licensing_Examination_qwen3_32b_instruction_no0_.pkl
+Assistant_Professional_Licensing_Examination_qwen3_32b_instruction_no0_.pkl
+number of parsing errors: 13
+number of unknown: 0
+number of correct answers: 1143
+number of error answers: 342
+parsing errors are considered as errors.
+correct_rate:0.7630
+(lower_correct_rate_95:0.7430~higher_correct_rate_95:0.7844)
+(lower_correct_rate_99:0.7343~higher_correct_rate_99:0.7911)
+Compute performance metrics of every exam Assistant_Professional_Licensing_Examination_qwen3_32b_instruction_no0_.pkl
+correct rate of each exam: ['0.7483', '0.7864', '0.7744', '0.7819', '0.7576']
+num of errors of each exam: [2, 5, 3, 0, 3]
+Compute performance metrics based on all questions Professional_Licensing_Examination_gpt-oss_120b_instruction_no0_.pkl
+Professional_Licensing_Examination_gpt-oss_120b_instruction_no0_.pkl
+number of parsing errors: 1
+number of unknown: 0
+number of correct answers: 1563
+number of error answers: 836
+parsing errors are considered as errors.
+correct_rate:0.6512
+(lower_correct_rate_95:0.6338~higher_correct_rate_95:0.6708)
+(lower_correct_rate_99:0.6238~higher_correct_rate_99:0.6746)
+Compute performance metrics of every exam Professional_Licensing_Examination_gpt-oss_120b_instruction_no0_.pkl
+correct rate of each exam: ['0.7028', '0.5150', '0.6767', '0.7117']
+num of errors of each exam: [1, 0, 0, 0]
+Compute performance metrics based on all questions Assistant_Professional_Licensing_Examination_gpt-oss_120b_instruction_no0_.pkl
+Assistant_Professional_Licensing_Examination_gpt-oss_120b_instruction_no0_.pkl
+number of parsing errors: 1
+number of unknown: 0
+number of correct answers: 1007
+number of error answers: 490
+parsing errors are considered as errors.
+correct_rate:0.6722
+(lower_correct_rate_95:0.6509~higher_correct_rate_95:0.6976)
+(lower_correct_rate_99:0.6395~higher_correct_rate_99:0.7056)
+Compute performance metrics of every exam Assistant_Professional_Licensing_Examination_gpt-oss_120b_instruction_no0_.pkl
+correct rate of each exam: ['0.6488', '0.6533', '0.7133', '0.7013', '0.6467']
+num of errors of each exam: [1, 0, 0, 0, 0]
+prompt using instruction_no1
+Compute performance metrics based on all questions Professional_Licensing_Examination_qwen-plus_instruction_no1_.pkl
+Professional_Licensing_Examination_qwen-plus_instruction_no1_.pkl
+number of parsing errors: 0
+number of unknown: 13
+number of correct answers: 2027
+number of error answers: 360
+parsing errors are considered as errors.
+correct_rate:0.8492
+(lower_correct_rate_95:0.8341~higher_correct_rate_95:0.8630)
+(lower_correct_rate_99:0.8287~higher_correct_rate_99:0.8647)
+both parsing errors and unknown instances are considered as errors.
+correct_rate_1:0.8446
+(lower_correct_rate_95_1:0.8300~higher_correct_rate_95:0.8571)
+(lower_correct_rate_99_1:0.8263~higher_correct_rate_99:0.8621)
+Compute performance metrics of every exam Professional_Licensing_Examination_qwen-plus_instruction_no1_.pkl
+correct rate of each exam: ['0.9042', '0.7167', '0.8689', '0.9079']
+num of errors of each exam: [5, 0, 5, 3]
+Compute performance metrics based on all questions Assistant_Professional_Licensing_Examination_qwen-plus_instruction_no1_.pkl
+Assistant_Professional_Licensing_Examination_qwen-plus_instruction_no1_.pkl
+number of parsing errors: 2
+number of unknown: 6
+number of correct answers: 1286
+number of error answers: 204
+parsing errors are considered as errors.
+correct_rate:0.8619
+(lower_correct_rate_95:0.8438~higher_correct_rate_95:0.8780)
+(lower_correct_rate_99:0.8391~higher_correct_rate_99:0.8820)
+both parsing errors and unknown instances are considered as errors.
+correct_rate_1:0.8585
+(lower_correct_rate_95_1:0.8391~higher_correct_rate_95:0.8752)
+(lower_correct_rate_99_1:0.8371~higher_correct_rate_99:0.8845)
+Compute performance metrics of every exam Assistant_Professional_Licensing_Examination_qwen-plus_instruction_no1_.pkl
+correct rate of each exam: ['0.8855', '0.8462', '0.8658', '0.8721', '0.8462']
+num of errors of each exam: [3, 1, 2, 1, 1]
+Compute performance metrics based on all questions Professional_Licensing_Examination_qwen3-max_instruction_no1_.pkl
+Professional_Licensing_Examination_qwen3-max_instruction_no1_.pkl
+number of parsing errors: 1
+number of unknown: 15
+number of correct answers: 2078
+number of error answers: 306
+parsing errors are considered as errors.
+correct_rate:0.8713
+(lower_correct_rate_95:0.8579~higher_correct_rate_95:0.8834)
+(lower_correct_rate_99:0.8520~higher_correct_rate_99:0.8864)
+both parsing errors and unknown instances are considered as errors.
+correct_rate_1:0.8658
+(lower_correct_rate_95_1:0.8508~higher_correct_rate_95:0.8788)
+(lower_correct_rate_99_1:0.8479~higher_correct_rate_99:0.8833)
+Compute performance metrics of every exam Professional_Licensing_Examination_qwen3-max_instruction_no1_.pkl
+correct rate of each exam: ['0.9277', '0.7174', '0.9056', '0.9365']
+num of errors of each exam: [5, 2, 7, 2]
+Compute performance metrics based on all questions Assistant_Professional_Licensing_Examination_qwen3-max_instruction_no1_.pkl
+Assistant_Professional_Licensing_Examination_qwen3-max_instruction_no1_.pkl
+number of parsing errors: 0
+number of unknown: 12
+number of correct answers: 1311
+number of error answers: 175
+parsing errors are considered as errors.
+correct_rate:0.8822
+(lower_correct_rate_95:0.8668~higher_correct_rate_95:0.8997)
+(lower_correct_rate_99:0.8620~higher_correct_rate_99:0.9031)
+both parsing errors and unknown instances are considered as errors.
+correct_rate_1:0.8752
+(lower_correct_rate_95_1:0.8578~higher_correct_rate_95:0.8925)
+(lower_correct_rate_99_1:0.8478~higher_correct_rate_99:0.8959)
+Compute performance metrics of every exam Assistant_Professional_Licensing_Examination_qwen3-max_instruction_no1_.pkl
+correct rate of each exam: ['0.8960', '0.8629', '0.8923', '0.8780', '0.8822']
+num of errors of each exam: [2, 1, 3, 3, 3]
+Compute performance metrics based on all questions Professional_Licensing_Examination_deepseek-v3.1_instruction_no1_.pkl
+Professional_Licensing_Examination_deepseek-v3.1_instruction_no1_.pkl
+number of parsing errors: 62
+number of unknown: 86
+number of correct answers: 1629
+number of error answers: 623
+parsing errors are considered as errors.
+correct_rate:0.7040
+(lower_correct_rate_95:0.6858~higher_correct_rate_95:0.7230)
+(lower_correct_rate_99:0.6793~higher_correct_rate_99:0.7342)
+both parsing errors and unknown instances are considered as errors.
+correct_rate_1:0.6787
+(lower_correct_rate_95_1:0.6604~higher_correct_rate_95:0.6983)
+(lower_correct_rate_99_1:0.6579~higher_correct_rate_99:0.7050)
+Compute performance metrics of every exam Professional_Licensing_Examination_deepseek-v3.1_instruction_no1_.pkl
+correct rate of each exam: ['0.7557', '0.5857', '0.7622', '0.7932']
+num of errors of each exam: [31, 28, 45, 44]
+Compute performance metrics based on all questions Assistant_Professional_Licensing_Examination_deepseek-v3.1_instruction_no1_.pkl
+Assistant_Professional_Licensing_Examination_deepseek-v3.1_instruction_no1_.pkl
+number of parsing errors: 58
+number of unknown: 66
+number of correct answers: 1004
+number of error answers: 370
+parsing errors are considered as errors.
+correct_rate:0.7011
+(lower_correct_rate_95:0.6774~higher_correct_rate_95:0.7242)
+(lower_correct_rate_99:0.6718~higher_correct_rate_99:0.7311)
+both parsing errors and unknown instances are considered as errors.
+correct_rate_1:0.6702
+(lower_correct_rate_95_1:0.6442~higher_correct_rate_95:0.6929)
+(lower_correct_rate_99_1:0.6382~higher_correct_rate_99:0.7009)
+Compute performance metrics of every exam Assistant_Professional_Licensing_Examination_deepseek-v3.1_instruction_no1_.pkl
+correct rate of each exam: ['0.7849', '0.6909', '0.7407', '0.7299', '0.7065']
+num of errors of each exam: [21, 25, 30, 24, 24]
+Compute performance metrics based on all questions Professional_Licensing_Examination_qwen3_32b_instruction_no1_.pkl
+Professional_Licensing_Examination_qwen3_32b_instruction_no1_.pkl
+number of parsing errors: 18
+number of unknown: 0
+number of correct answers: 1783
+number of error answers: 599
+parsing errors are considered as errors.
+correct_rate:0.7429
+(lower_correct_rate_95:0.7254~higher_correct_rate_95:0.7592)
+(lower_correct_rate_99:0.7208~higher_correct_rate_99:0.7658)
+Compute performance metrics of every exam Professional_Licensing_Examination_qwen3_32b_instruction_no1_.pkl
+correct rate of each exam: ['0.8057', '0.6218', '0.7580', '0.8084']
+num of errors of each exam: [3, 5, 5, 5]
+Compute performance metrics based on all questions Assistant_Professional_Licensing_Examination_qwen3_32b_instruction_no1_.pkl
+Assistant_Professional_Licensing_Examination_qwen3_32b_instruction_no1_.pkl
+number of parsing errors: 9
+number of unknown: 3
+number of correct answers: 1145
+number of error answers: 341
+parsing errors are considered as errors.
+correct_rate:0.7659
+(lower_correct_rate_95:0.7405~higher_correct_rate_95:0.7886)
+(lower_correct_rate_99:0.7405~higher_correct_rate_99:0.7967)
+both parsing errors and unknown instances are considered as errors.
+correct_rate_1:0.7644
+(lower_correct_rate_95_1:0.7403~higher_correct_rate_95:0.7850)
+(lower_correct_rate_99_1:0.7363~higher_correct_rate_99:0.7917)
+Compute performance metrics of every exam Assistant_Professional_Licensing_Examination_qwen3_32b_instruction_no1_.pkl
+correct rate of each exam: ['0.7508', '0.7407', '0.7852', '0.8121', '0.7635']
+num of errors of each exam: [3, 3, 2, 0, 4]
+Compute performance metrics based on all questions Professional_Licensing_Examination_gpt-oss_120b_instruction_no1_.pkl
+Professional_Licensing_Examination_gpt-oss_120b_instruction_no1_.pkl
+number of parsing errors: 2
+number of unknown: 29
+number of correct answers: 1551
+number of error answers: 818
+parsing errors are considered as errors.
+correct_rate:0.6542
+(lower_correct_rate_95:0.6339~higher_correct_rate_95:0.6736)
+(lower_correct_rate_99:0.6318~higher_correct_rate_99:0.6782)
+both parsing errors and unknown instances are considered as errors.
+correct_rate_1:0.6462
+(lower_correct_rate_95_1:0.6254~higher_correct_rate_95:0.6654)
+(lower_correct_rate_99_1:0.6225~higher_correct_rate_99:0.6683)
+Compute performance metrics of every exam Professional_Licensing_Examination_gpt-oss_120b_instruction_no1_.pkl
+correct rate of each exam: ['0.7253', '0.5201', '0.6796', '0.6959']
+num of errors of each exam: [14, 2, 7, 8]
+Compute performance metrics based on all questions Assistant_Professional_Licensing_Examination_gpt-oss_120b_instruction_no1_.pkl
+Assistant_Professional_Licensing_Examination_gpt-oss_120b_instruction_no1_.pkl
+number of parsing errors: 2
+number of unknown: 14
+number of correct answers: 1002
+number of error answers: 480
+parsing errors are considered as errors.
+correct_rate:0.6752
+(lower_correct_rate_95:0.6543~higher_correct_rate_95:0.6974)
+(lower_correct_rate_99:0.6408~higher_correct_rate_99:0.7028)
+both parsing errors and unknown instances are considered as errors.
+correct_rate_1:0.6689
+(lower_correct_rate_95_1:0.6462~higher_correct_rate_95:0.6896)
+(lower_correct_rate_99_1:0.6368~higher_correct_rate_99:0.7016)
+Compute performance metrics of every exam Assistant_Professional_Licensing_Examination_gpt-oss_120b_instruction_no1_.pkl
+correct rate of each exam: ['0.6520', '0.6589', '0.6902', '0.6983', '0.6814']
+num of errors of each exam: [4, 1, 3, 3, 5]
