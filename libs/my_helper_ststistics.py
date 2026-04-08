@@ -3,7 +3,7 @@ from scipy.stats import bootstrap
 from sklearn.metrics import mean_squared_error, confusion_matrix
 
 
-def my_bootstrap(data, func, sampling_times=100, c=0.95):  # default sampling_times changed from 500 to 1000.
+def my_bootstrap(data, func, sampling_times=1000, c=0.95):  # default sampling_times changed from 500 to 1000.
     if type(data) == tuple:
         data1, data2 = data
 

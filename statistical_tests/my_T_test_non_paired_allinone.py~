@@ -1,0 +1,112 @@
+'''
+Treat the exam scores as continuous values.
+performance comparison of the same model for two different units
+unpaired t test
+'''
+import numpy as np
+from pathlib import Path
+import pickle
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument('--examination_type', default='Professional_Licensing_Examination')  # Professional_Licensing_Examination  Assistant_Professional_Licensing_Examination
+parser.add_argument('--instruction_no', type=int, default=0)
+parser.add_argument('--thinking_suffix', default='')  # /think  /no_think
+parser.set_defaults(unknown_as_error=False)
+args = parser.parse_args()
+from scipy import stats
+from libs.my_helper_exam import parse_result
+
+
+if __name__ == '__main__':
+
+    list_unit1 = [1, 2, 3]
+    # list_unit1 = [2]
+    list_unit2 = [4]
+
+    list_model_name1 = ['qwen-max', 'qwen3-max',  # 'qwen3.5-max',
+                       'gpt-3.5-turbo', 'gpt-4', 'gpt-5', 'gpt-5.4',
+                       'doubao-seed-1.6', 'doubao-seed-1-8-251228','doubao-seed-2-0-pro-260215',
+                       'gemini-2.5-pro', 'gemini-3-pro-preview', 'gemini-3.1-pro-preview']
+
+
+    list_correct_answers_all = []
+    list_prediction_answer_all = []
+
+    for model1 in list_model_name1:
+        print(f'model:{model1}')
+        filename_pkl1 = f'{args.examination_type}_{model1.replace(":", "_")}_instruction_no{args.instruction_no}_{args.thinking_suffix}.pkl'
+        with open(Path(__file__).resolve().parents[1] / 'results' / filename_pkl1, 'rb') as f1:
+            df1, list_prediction_answer1 = pickle.load(f1)
+            list_correct_answers1 = df1['答案'].tolist()
+            # list_exams = df1['试卷编号'].tolist()
+            list_units = df1['单元编号'].tolist()
+
+        list_correct_answers_tmp = []
+        for answer1 in list_correct_answers1:
+            answer1 = answer1.strip()
+            answer1 = answer1[0:1]
+            list_correct_answers_tmp.append(answer1)
+
+        list_correct_answers_all.extend(list_correct_answers_tmp)
+
+        list_prediction_answer_tmp = [parse_result(answer) for answer in list_prediction_answer1]
+        list_prediction_answer_all.extend(list_prediction_answer_tmp)
+
+
+    for unit_num1 in list_unit1:
+        for unit_num2 in list_unit2:
+            if unit_num1 == unit_num2:
+                continue
+            
+            print(f'unit:{unit_num1} compared with unit:{unit_num2}')
+
+            # 提取 unit_num1和 unit_num2 的预测结果
+            list_predictions_unit1 = []
+            list_predictions_unit2 = []
+
+            for i, unit in enumerate(list_units):
+                if unit == unit_num1:
+                    pred1 = parse_result(list_prediction_answer_all[i])
+                    if pred1 in ['A', 'B', 'C', 'D', 'E']:
+                        list_predictions_unit1.append(1 if pred1 == list_correct_answers_all[i] else 0)
+                elif unit == unit_num2:
+                    pred2 = parse_result(list_prediction_answer_all[i])
+                    if pred2 in ['A', 'B', 'C', 'D', 'E']:
+                        list_predictions_unit2.append(1 if pred2 == list_correct_answers_all[i] else 0)
+
+            # 转换为 numpy 数组
+            scores_unit1 = np.array(list_predictions_unit1)
+            scores_unit2 = np.array(list_predictions_unit2)
+
+            # 打印基本统计信息
+            # print(f"\nModel: {model1}")
+            # print(f"Unit {unit_num1}: n={len(scores_unit1)}, mean={np.mean(scores_unit1):.4f}, std={np.std(scores_unit1, ddof=1):.4f}")
+            # print(f"Unit {unit_num2}: n={len(scores_unit2)}, mean={np.mean(scores_unit2):.4f}, std={np.std(scores_unit2, ddof=1):.4f}")
+
+            # 执行独立样本双边T 检验 (unpaired two-tailed t-test)
+            # 检验 unit1 和 unit2 的得分是否有显著差异
+            # equal_var=False 表示不假设方差齐性 (Welch's t-test)
+
+            # alternative='two-sided' 表示备择假设是 unit1 ≠ unit2
+            # t_statistic, p_value = stats.ttest_ind(scores_unit1, scores_unit2, equal_var=False, alternative='two-sided')
+
+            t_statistic, p_value = stats.ttest_ind(scores_unit1, scores_unit2, equal_var=False, alternative='greater')
+
+            # print(f"T-statistic: {t_statistic:.4f}")
+            print(f"P-value (one-tailed, greater): {p_value:.4f}")
+
+            # 判断显著性 (单边检验)
+            # if p_value < 0.05:
+            #     significance = "*"
+            #     if p_value < 0.01:
+            #         significance = "**"
+            #         if p_value < 0.001:
+            #             significance = "***"
+            #     print(f"Significance: {significance} (Unit {unit_num1} > Unit {unit_num2}, p < 0.05)")
+            # else:
+            #     print(f"Not significant (Unit {unit_num1} ≤ Unit {unit_num2}, p >= 0.05)")
+            #
+
+
+
+    print('OK.')

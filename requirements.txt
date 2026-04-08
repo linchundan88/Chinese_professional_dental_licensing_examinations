@@ -1,4 +1,7 @@
+openpyxl
 openai
 pandas
 matplotlib
 seaborn
+scipy
+statsmodels
